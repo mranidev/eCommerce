@@ -1,2 +1,2 @@
 # Laravel eCommerce
-![Alt text](https://example.com/path/to/your/image.jpg)
+![Laravel Ecommerce Project](https://example.com/path/to/your/image.jpg)
