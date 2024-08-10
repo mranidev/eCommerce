@@ -1,2 +1,2 @@
-# eCommerce
-E-commerce Website
+# Laravel eCommerce
+![Alt text](https://example.com/path/to/your/image.jpg)
