@@ -1,2 +1,2 @@
 # Laravel eCommerce
-![Laravel Ecommerce Project](https://example.com/path/to/your/image.jpg)
+![Laravel Ecommerce Project](https://github.com/mranidev/eCommerce/blob/main/screenshot.png?raw=true)
