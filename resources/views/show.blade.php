@@ -54,7 +54,7 @@
   </div>
   @if(count($productFromSameCategories)>0)
   <div class="jumbotron">
-    <h3>Books recommended for you </h3>
+    <h3>Products recommended for you </h3>
 
     <div class="row">
 
