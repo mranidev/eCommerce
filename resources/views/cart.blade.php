@@ -10,6 +10,11 @@
   @endforeach
 
   @endif
+  @if(flash()->message)
+                <div class="alert alert-success">
+                    {{ flash()->message }}
+                </div>
+                @endif
   <table class="table">
     <thead>
       <tr>

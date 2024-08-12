@@ -15,7 +15,7 @@ Route::post('/charge',             [CartController::class, 'charge'])->name('car
 Route::get('/addToCart/{product}', [CartController::class, 'addToCart'])->name('add.cart');
 Route::get('/cart',                [CartController::class, 'showCart'])->name('cart.show');
 
-Route::post('/products/{product}', [CartController::class, 'updateCarte'])->name('cart.update');
+Route::post('/products/{product}', [CartController::class, 'updateCart'])->name('cart.update');
 Route::post('/product/{product}',  [CartController::class, 'removeCart'])->name('cart.remove');
 
 

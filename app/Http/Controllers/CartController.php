@@ -52,6 +52,7 @@ class CartController extends Controller
     	$cart->updateQty($product->id,$request->qty);
     	session()->put('cart',$cart);
     	// notify()->success(' Cart updated!');
+        flash('Cart updated!');
         return redirect()->back();
 
     }
@@ -67,7 +68,8 @@ class CartController extends Controller
 
     	}
     	// notify()->success(' Cart updated!');
-            return redirect()->back();
+        flash('Cart updated!');
+        return redirect()->back();
     }
 
     public function order(){
@@ -129,6 +131,7 @@ class CartController extends Controller
 
             session()->forget('cart');
             // notify()->success(' Transaction completed!');
+            flash('Transaction completed!');
             return redirect()->to('/');
 
         }else{
