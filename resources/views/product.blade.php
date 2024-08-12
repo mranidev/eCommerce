@@ -5,6 +5,7 @@
   <main role="main">
 
     <div class="container">
+      
       <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
 
         <div class="carousel-inner">
@@ -32,6 +33,11 @@
     </div>
 
     <div class="container">
+    @if(flash()->message)
+                <div class="alert alert-success">
+                    {{ flash()->message }}
+                </div>
+                @endif
       <h2>Category</h2>
       @foreach(App\Models\Category::all() as $cat)
       <a href="/#"> <button class="btn btn-secondary">{{$cat->name}}</button></a>
@@ -75,7 +81,7 @@
 
       </div>
 
-      <!-- <div class="jumbotron">
+      <div class="jumbotron">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -144,7 +150,7 @@
           </a>
         </div>
       </div>
- -->
+
 
 
 

@@ -33,48 +33,7 @@
 
  <div class="container">
     <div class="row">
-        <div class="col-md-6">
-
-           <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Image</th>
-      <th scope="col">Product</th>
-      <th scope="col">Price</th>
-      <th scope="col">Qty</th>
-
-    </tr>
-  </thead>
-  <tbody>
-
-    @if($cart)
-  @php $i=1 @endphp
-
-@foreach($cart->items as $product)
-    <tr>
-      <th scope="row">{{$i++}}</th>
-      
-      <td><img src="{{Storage::url($product['image'])}}" width="100"></td>
-      <td>{{$product['name']}}</td>
-      <td>${{$product['price']}}</td>
-      <td>
-        {{$product['qty']}}
-    </td>
-      <td>
-    
-      </td>
-    </tr>
-   @endforeach
-   @endif
-
-
-
-  </tbody>
-</table>
-<hr>
-Total Price:${{$cart->totalPrice}}
-</div>
+        
 
  	<div class="col-md-6">
  		<div class="card">
@@ -129,6 +88,48 @@ Total Price:${{$cart->totalPrice}}
             </div>
         </div>
     </div>
+</div>
+<div class="col-md-6">
+
+           <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Product</th>
+      <th scope="col">Price</th>
+      <th scope="col">Qty</th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    @if($cart)
+  @php $i=1 @endphp
+
+@foreach($cart->items as $product)
+    <tr>
+      <th scope="row">{{$i++}}</th>
+      
+      <td><img src="{{asset($product['image'])}}" width="100"></td>
+      <td>{{$product['name']}}</td>
+      <td>${{$product['price']}}</td>
+      <td>
+        {{$product['qty']}}
+    </td>
+      <td>
+    
+      </td>
+    </tr>
+   @endforeach
+   @endif
+
+
+
+  </tbody>
+</table>
+<hr>
+Total Price:${{$cart->totalPrice}}
 </div>
 </div>
 

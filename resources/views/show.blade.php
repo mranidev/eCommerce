@@ -4,6 +4,11 @@
 
 
 <div class="container">
+  @if(flash()->message)
+                <div class="alert alert-success">
+                    {{ flash()->message }}
+                </div>
+                @endif
   <div class="card">
     <div class="row">
       <aside class="col-sm-5 border-right">

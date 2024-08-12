@@ -3,6 +3,11 @@
 @section('content')
 
 <div class="container">
+@if(flash()->message)
+                <div class="alert alert-success">
+                    {{ flash()->message }}
+                </div>
+                @endif
   <form action="{{route('more.product')}}" method="GET">
     <div class="form-row">
       <div class="col-md-8">
