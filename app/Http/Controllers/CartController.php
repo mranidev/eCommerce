@@ -28,7 +28,7 @@ class CartController extends Controller
     	session()->put('cart',$cart);
     	// notify()->success('Product added to cart!');
         // Flash::success('Data saved successfully!');
-        flash('My message');
+        flash('Product added to cart!');
         
         return redirect()->back();
 
