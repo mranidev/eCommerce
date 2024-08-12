@@ -45,7 +45,7 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <h2>Books</h2>
+          <h2>Products</h2>
 
           <div class="row">
 
