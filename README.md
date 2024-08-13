@@ -18,7 +18,7 @@ This is a Laravel-based eCommerce application that provides a robust platform fo
 
 ### Prerequisites
 
-- PHP 8.0 or higher
+- PHP 8.1 or higher
 - Composer
 - MySQL or another database system
 
