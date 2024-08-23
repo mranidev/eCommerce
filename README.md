@@ -31,3 +31,9 @@ composer install
 replace with your database in .env 
 php artisan migrate
 ```
+
+## Todo
+
+- Admin Management
+- Categories
+- RESTful api search
