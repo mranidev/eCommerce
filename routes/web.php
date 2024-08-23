@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontProductListController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;
 
 // Route::get('/', 'FrontProductListController@index');
 Route::get('/',                    [FrontProductListController::class, 'index']);
@@ -22,11 +23,11 @@ Route::post('/product/{product}',  [CartController::class, 'removeCart'])->name(
 // Auth::routes();
 
 Route::get('all/products', [FrontProductListController::class, 'moreProducts'])->name('more.product');
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home',        [HomeController::class, 'index'])->name('home');
 // Route::get('subcatories/{id}', 'ProductController@loadSubCategories');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return redirect('/');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 // Route::middleware('auth')->group(function () {
